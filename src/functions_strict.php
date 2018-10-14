@@ -11,3 +11,4 @@ namespace Nfq\Akademija\Strict {
         return $sum;
     }
 }
+?>
