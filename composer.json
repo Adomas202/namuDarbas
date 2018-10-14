@@ -15,5 +15,11 @@
     "minimum-stability": "stable",
     "require-dev": {
         "phpunit/phpunit": "^7.4"
+    },
+    "autoload": {
+        "files": [
+            "src/functions.php",
+            "src/functions_strict.php"
+        ]
     }
 }

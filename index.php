@@ -4,16 +4,19 @@
 </head>
 <body>
 <?php
-include './src/functions.php';
-include './src/functions_strict.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
-echo calculateHomeWorkSum(3, 4, '1'); #po root namespace;
-echo "<br>";
-echo Nfq\Akademija\Not_Typed\calculateHomeWorkSum(3, 2.2, '1'); #po Nfq\Akademija\Not_Typed namespace;
-echo "<br>";
-echo Nfq\Akademija\Soft\calculateHomeWorkSum(3, 2.2, '1'); #po Nfq\Akademija\Soft namespace;
-echo "<br>";
-echo Nfq\Akademija\Strict\calculateHomeWorkSum(3, 2.2, '1'); #po Nfq\Akademija\Strict namespace su declare(strict_types=1) direktyva;
+echo "calculateHomeWorkSum: ".calculateHomeWorkSum(3, 2.2, '1');
+echo PHP_EOL;
+
+echo "</br>Nfq\Akademija\Not_Typed\calculateHomeWorkSum: ".Nfq\Akademija\Not_Typed\calculateHomeWorkSum(3, 2.2, '1');
+echo PHP_EOL;
+
+echo "</br>Nfq\Akademija\Soft\calculateHomeWorkSum: ".Nfq\Akademija\Soft\calculateHomeWorkSum(3, 2.2, '1');
+echo PHP_EOL;
+
+echo "</br>Nfq\Akademija\Strict\calculateHomeWorkSum: ".Nfq\Akademija\Strict\calculateHomeWorkSum(3, 2.2, '1');
+echo PHP_EOL;
 ?>
 </body>
 </html>

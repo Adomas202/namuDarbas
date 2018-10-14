@@ -1,38 +1,24 @@
 <?php
 
+namespace {
+    function calculateHomeWorkSum(...$numbers)
+    {
+        return array_sum($numbers);
+    }
+}
+
+
 namespace Nfq\Akademija\Not_Typed {
     function calculateHomeWorkSum(...$numbers): int
     {
-        $sum = 0;
-        foreach ($numbers as $number) {
-            $sum += $number;
-        }
-        return $sum;
+        return array_sum($numbers);
     }
-
-    ;
 }
 
 namespace Nfq\Akademija\Soft {
     function calculateHomeWorkSum(int...$numbers): int
     {
-        $sum = 0;
-        foreach ($numbers as $number) {
-            $sum += $number;
-        }
-        return $sum;
-    }
-
-    ;
-}
-
-namespace {
-    function calculateHomeWorkSum(...$numbers)
-    {
-        $sum = 0;
-        foreach ($numbers as $number) {
-            $sum += $number;
-        }
-        return $sum;
+        return array_sum($numbers);
     }
 }
+?>
