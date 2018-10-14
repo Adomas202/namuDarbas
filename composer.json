@@ -1,0 +1,19 @@
+{
+    "name": "adomas/namudarbas",
+    "description": "Namu darbas pirmas",
+    "type": "project",
+    "require": {
+        "symfony/stopwatch": "^4.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adomas Poleninas",
+            "email": "adomas.poleninas@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    }
+}
