@@ -2,13 +2,14 @@
 declare(strict_types=1);
 
 namespace Nfq\Akademija\Strict {
-    function calculateHomeWorkSum(int...$numbers):int
+
+    function calculateHomeWorkSum(...$numbers)
     {
-        $sum = 0;
-        foreach ($numbers as $number) {
-            $sum += $number;
-        }
-        return (string)$sum;
+        return calculateHomeWorkSumCall(...$numbers);
+    }
+
+    function calculateHomeWorkSumCall(int ...$numbers): int
+    {
+        return array_sum($numbers);
     }
 }
-?>

@@ -20,4 +20,3 @@ namespace Nfq\Akademija\Soft {
         return array_sum($numbers);
     }
 }
-?>
